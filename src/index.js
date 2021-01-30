@@ -1,4 +1,4 @@
-import "../assets/main.css";
+import "../assets/main.scss";
 
 // Vanila JavaScript todo list app
 var taskInput = document.getElementById("new-task");                      // New-task
@@ -41,7 +41,7 @@ var addTask = function() {                            // Add a new task
 
 var editTask = function() {                                     // Edit an existing task
   var listItem = this.parentNode;                               // Create List Item
-  var editInput = listItem.querySelector("input[type=text");    // Input (text)
+  var editInput = listItem.querySelector("input[type=text]");    // Input (text)
   var label = listItem.querySelector("label");                  // Label
   var button = listItem.getElementsByTagName("button")[0];      // Button
 
